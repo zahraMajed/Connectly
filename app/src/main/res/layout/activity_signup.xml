@@ -24,7 +24,7 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="38dp"
+            android:layout_height="49dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
@@ -54,7 +54,7 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="49dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
@@ -84,9 +84,9 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="64dp"
+            android:layout_height="69dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:layout_weight="1"
             android:text="Confirm password"
             android:textColor="@android:color/black"
