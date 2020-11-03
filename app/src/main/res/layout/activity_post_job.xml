@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/tool_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Company Name"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/jobTitle"
+        android:layout_width="73dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Job Title "
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="@+id/companyName"
+        app:layout_constraintTop_toBottomOf="@+id/companyName" />
+
+
+    <TextView
+        android:id="@+id/jobDesribtion"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Job Desribtion: "
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="@+id/companyName"
+        app:layout_constraintTop_toBottomOf="@+id/jobTitle" />
+
+    <TextView
+        android:id="@+id/Requirments"
+        android:layout_width="73dp"
+        android:layout_height="20dp"
+        android:text="Requirments : "
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="@+id/companyName"
+        app:layout_constraintTop_toBottomOf="@+id/editDesc" />
+
+    <TextView
+        android:id="@+id/theNameOfCompany"
+        android:layout_width="143dp"
+        android:layout_height="20dp"
+        android:text="Filled by default"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/companyName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toEndOf="@+id/companyName"
+        app:layout_constraintTop_toTopOf="@+id/companyName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/editName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter here "
+        android:padding="5dp"
+        android:background="@drawable/button_shape_background_test2"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/jobTitle"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="@+id/theNameOfCompany"
+        app:layout_constraintTop_toTopOf="@+id/jobTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/editDesc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter here "
+        android:padding="5dp"
+        android:ems="5"
+        android:lines="5"
+        android:background="@drawable/button_shape_background_test2"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/jobDesribtion"
+        app:layout_constraintStart_toStartOf="@+id/theNameOfCompany"
+        app:layout_constraintTop_toTopOf="@+id/jobDesribtion"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/editDesc2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape_background_test2"
+        android:ems="5"
+        android:hint="Enter here "
+        android:lines="5"
+        android:padding="5dp"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="@+id/theNameOfCompany"
+        app:layout_constraintTop_toTopOf="@+id/Requirments"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/clearData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:text="Clear Data"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/postJob" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/clearData"/>
+
+    <Button
+        android:id="@+id/postJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Job"
+        app:layout_constraintTop_toBottomOf="@+id/editDesc2"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp" />
+
+
+    <TextView
+        android:id="@+id/required1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/jobTitle"
+        app:layout_constraintStart_toEndOf="@+id/jobTitle"
+        app:layout_constraintTop_toTopOf="@+id/jobTitle" />
+
+    <TextView
+        android:id="@+id/required2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/jobDesribtion"
+        app:layout_constraintStart_toEndOf="@+id/jobDesribtion"
+        app:layout_constraintTop_toTopOf="@+id/jobDesribtion" />
+
+
+    <TextView
+        android:id="@+id/required4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/Requirments"
+        app:layout_constraintStart_toEndOf="@+id/Requirments"
+        app:layout_constraintTop_toTopOf="@+id/Requirments" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
