@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "projectMilestone1_interface2"
