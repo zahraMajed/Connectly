@@ -6,6 +6,7 @@ import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.LinearInterpolator;
 
 import com.agrawalsuneet.dotsloader.loaders.LazyLoader;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         // 1) Lazy loader icon settings and inimations:
         LazyLoader loader = findViewById(R.id.lazyLoader);
@@ -41,5 +43,16 @@ public class MainActivity extends AppCompatActivity {
             }
         },4000);
 
+
+
+
+
+        // go to Post Job screen
+        findViewById(R.id.splashLogo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,ViewRequsteActivity.class));
+            }
+        });
     }
 }
