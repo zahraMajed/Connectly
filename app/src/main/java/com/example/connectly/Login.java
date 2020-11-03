@@ -18,7 +18,7 @@ public class Login extends AppCompatActivity {
         findViewById(R.id.imageView2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Login.this,ViewRequsteActivity.class));
+                startActivity(new Intent(Login.this,PostJobActivity.class));
             }
         });
     }
