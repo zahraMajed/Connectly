@@ -12,11 +12,14 @@
         <activity android:name=".ProviderHome"></activity>
         <activity android:name=".ViewRequsteActivity" />
         <activity android:name=".PostJobActivity" />
-        <activity android:name=".Signup"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Login"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".Signup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
