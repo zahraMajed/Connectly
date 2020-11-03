@@ -37,7 +37,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -64,7 +64,7 @@
 
         <EditText
             android:id="@+id/editTextNumberPassword1"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_weight="1"
