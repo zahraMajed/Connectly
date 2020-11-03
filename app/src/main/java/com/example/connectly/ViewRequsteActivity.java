@@ -12,7 +12,5 @@ public class ViewRequsteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_request);
 
-        TextView textView = findViewById(R.id.txt_title);
-        textView.setText("View Requsts");
     }
 }
