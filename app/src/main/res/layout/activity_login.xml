@@ -16,7 +16,6 @@
         android:layout_marginRight="50dp"
         app:srcCompat="@drawable/logo" />
 
-
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="226dp"
@@ -94,7 +93,6 @@
         android:textSize="12dp"
         android:background="#E8C8C8"
         android:text="or Signup" />
-
 
 
 </TableLayout>
