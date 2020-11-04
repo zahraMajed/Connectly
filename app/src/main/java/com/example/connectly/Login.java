@@ -17,11 +17,11 @@ public class Login extends AppCompatActivity {
 
 
 
-        // go to Post Job screen
+        // go to Provider Home Activity (by clicking on logo when we run the app):
         findViewById(R.id.imageView2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Login.this,PostJobActivity.class));
+                startActivity(new Intent(Login.this,ProviderHome.class));
             }
         });
 

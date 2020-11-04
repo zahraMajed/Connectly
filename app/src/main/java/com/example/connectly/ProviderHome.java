@@ -12,15 +12,20 @@ public class ProviderHome extends AppCompatActivity {
     //1)Declear the components:
     Button PostJobBtn;
     Button ViewRequestsBtn;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_provider_home);
-        
+
         //2) Define the bttons:
         PostJobBtn=(Button) findViewById(R.id.PostJob_providerHome);
         ViewRequestsBtn=(Button) findViewById(R.id.viewRequests_providerHome);
+
+        toolbar = findViewById(R.id.myToolBar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Home");
 
 
 
