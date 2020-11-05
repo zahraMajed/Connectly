@@ -58,7 +58,7 @@ public class SeekerHome extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         //intents
-        apply = (Button) findViewById(R.id.applyId);
+        apply = (Button) findViewById(R.layout.home_row.);
         apply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
