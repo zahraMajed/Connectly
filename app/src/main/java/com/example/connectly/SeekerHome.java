@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -71,6 +72,27 @@ public class SeekerHome extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return true;
+    }
+
+    //on Click on menu items:
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id=item.getItemId();
+
+        if (id == R.id.menu1_home){
+            Intent intent= new Intent(SeekerHome.this,SeekerHome.class);
+            startActivity(intent);
+            return true;
+        } else if (id == R.id.menu1_profile){
+            Intent intent= new Intent(SeekerHome.this,SeekerProfile.class);
+            startActivity(intent);
+            return true;
+        } else if (id == R.id.menu1_logout){
+            Intent intent= new Intent(SeekerHome.this,Login.class);
+            startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }
