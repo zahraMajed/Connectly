@@ -33,13 +33,13 @@ public class ProviderHome extends AppCompatActivity {
 
     //4) move to View Requests Activity on Click:
     public void viewRequests_onClick(View view) {
-        Intent moveToPostJob = new Intent(ProviderHome.this,PostJobActivity.class);
+        Intent moveToPostJob = new Intent(ProviderHome.this,ViewRequsteActivity.class);
         startActivity(moveToPostJob);
     }
 
     //5) move to Post Job Activity on click:
     public void postJob_onClick(View view) {
-        Intent moveToViewRequests = new Intent(ProviderHome.this,ViewRequsteActivity.class);
+        Intent moveToViewRequests = new Intent(ProviderHome.this,PostJobActivity.class);
         startActivity(moveToViewRequests);
     }
 }
