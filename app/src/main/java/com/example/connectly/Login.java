@@ -39,7 +39,7 @@ private EditText pass;
     }
     public void check1() {
         Intent intent;
-        if (!pass.getText().toString().equals("Se123")) {
+        if (pass.getText().toString().equals("Se123")) {
             intent = new Intent(Login.this, SeekerHome.class);
             startActivity(intent);
         }
