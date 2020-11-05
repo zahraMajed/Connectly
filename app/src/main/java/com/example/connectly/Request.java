@@ -11,7 +11,6 @@ import com.github.barteksc.pdfviewer.PDFView;
 
 public class Request extends AppCompatActivity {
 
-
     //1)Declear the components:
     private PDFView cv;
     private Toolbar toolbar;
@@ -35,7 +34,7 @@ public class Request extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
+        inflater.inflate(R.menu.menu2, menu);
         return true;
     }
 }
