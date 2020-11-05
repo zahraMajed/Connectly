@@ -58,7 +58,7 @@ public class SeekerHome extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         //intents
-        apply = (Button) findViewById(R.id.applyId);
+        /*apply = (Button) findViewById(R.id.applyId);
         apply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,6 +67,16 @@ public class SeekerHome extends AppCompatActivity {
             }
         });
 
+         */
+
+
+
+    }
+
+    //move to Apply job on Click Apply Button:
+    public void ApplyOnClick(View view) {
+        Intent moveToApplyJob= new Intent(SeekerHome.this,ApplyJob.class);
+        startActivity(moveToApplyJob);
     }
 
     //Attache menu
