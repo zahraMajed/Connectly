@@ -86,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="69dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:layout_weight="1"
             android:text="Confirm password"
             android:textColor="@android:color/black"
@@ -94,30 +94,53 @@
 
         <EditText
             android:id="@+id/editTextNumberPassword2"
-            android:layout_marginTop="40dp"
             android:layout_width="300dp"
             android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="10dp"
-            android:textSize="17dp"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textSize="17dp" />
+
+
+
 
     </TableRow>
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup as Seeker or Provider?"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="280dp"
+        android:text="Seeker or Provider?"
+        android:background="#B9AAAAAA" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="130dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="130dp"
         android:background="@android:color/holo_blue_light"
         android:text="Signup" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/orlogin"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_marginLeft="160dp"

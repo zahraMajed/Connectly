@@ -35,7 +35,7 @@ public class SeekerHome extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_seeker_home);
 
         //Attaching AppBar code
         toolbar = findViewById(R.id.myToolBar);
