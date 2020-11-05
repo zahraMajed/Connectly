@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             }
         },4000);
 
-        
+
         // go to Post Job screen
         findViewById(R.id.splashLogo).setOnClickListener(new View.OnClickListener() {
             @Override
