@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 import com.github.barteksc.pdfviewer.PDFView;
 
@@ -28,5 +30,12 @@ public class Request extends AppCompatActivity {
         cv= (PDFView) findViewById(R.id.pdfCv);
         cv.fromAsset("resume_tamplet.pdf").load();
 
+    }
+    //Attache menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
     }
 }

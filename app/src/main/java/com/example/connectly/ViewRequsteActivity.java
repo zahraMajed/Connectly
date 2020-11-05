@@ -2,6 +2,8 @@ package com.example.connectly;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -22,5 +24,13 @@ public class ViewRequsteActivity extends AppCompatActivity {
         Intent moveToRequest= new Intent(ViewRequsteActivity.this,Request.class);
         startActivity(moveToRequest);
     }
+    //Attache menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
 
 }

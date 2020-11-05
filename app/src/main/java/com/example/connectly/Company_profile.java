@@ -1,6 +1,8 @@
 package com.example.connectly;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -39,5 +41,12 @@ public class Company_profile extends AppCompatActivity {
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
             }});
+    }
+    //Attache menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
     }
 }

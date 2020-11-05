@@ -5,6 +5,8 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 
@@ -41,5 +43,12 @@ public class ProviderHome extends AppCompatActivity {
     public void postJob_onClick(View view) {
         Intent moveToViewRequests = new Intent(ProviderHome.this,PostJobActivity.class);
         startActivity(moveToViewRequests);
+    }
+    //Attache menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
     }
 }
