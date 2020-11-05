@@ -4,14 +4,14 @@
 
     <group android:checkableBehavior="none">
         <item
-        android:id="@+id/menu_home"
+        android:id="@+id/menu_home2"
         android:title="Home"/>
         <item
-            android:id="@+id/editProfile"
+            android:id="@+id/profile2"
             android:title="Profile" />
 
         <item
-            android:id="@+id/logout"
+            android:id="@+id/logout2"
             android:title="Logout"/>
     </group>
 
