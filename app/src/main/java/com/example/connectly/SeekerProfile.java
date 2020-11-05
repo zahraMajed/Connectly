@@ -5,6 +5,8 @@ import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 
 import com.example.connectly.R;
@@ -48,5 +50,12 @@ public class SeekerProfile extends AppCompatActivity {
         });
 
 
+    }
+    //Attache menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
     }
 }
