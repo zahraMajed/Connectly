@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".Request"></activity>
+        <activity android:name=".SeekerProfile" />
+        <activity android:name=".Request" />
         <activity android:name=".ProviderHome" />
         <activity android:name=".ViewRequsteActivity" />
         <activity android:name=".PostJobActivity" />
