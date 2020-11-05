@@ -14,12 +14,15 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
+import android.content.Intent;
+
 
 
 public class SeekerHome extends AppCompatActivity {
@@ -32,6 +35,7 @@ public class SeekerHome extends AppCompatActivity {
     String mTitle[] = {"Testing", "IOs", "Android and Java developer", "Web developer"};
     String mDescription[] = {"SS&co", "Adc","eco", "cmp"};
 
+    public Button apply;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +56,16 @@ public class SeekerHome extends AppCompatActivity {
         //Adapter setup
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+
+        //intents
+        apply = (Button) findViewById(R.id.applyId);
+        apply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SeekerHome.this, ApplyJob.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
