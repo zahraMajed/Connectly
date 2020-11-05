@@ -22,7 +22,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="Company Name"
-                android:textSize="22dp"/>
+                android:textSize="22dp"
+                android:textColor="#B2BABB"/>
 
             <TextView
                 android:id="@+id/ET_ComName"
@@ -40,7 +41,8 @@
                 android:layout_below="@+id/ET_ComName"
                 android:layout_marginTop="10dp"
                 android:text="Email"
-                android:textSize="22dp"/>
+                android:textSize="22dp"
+                android:textColor="#B2BABB"/>
 
             <TextView
                 android:id="@+id/ET_ComEmail"
@@ -58,7 +60,8 @@
                 android:layout_below="@+id/ET_ComEmail"
                 android:layout_marginTop="10dp"
                 android:text="Phone number"
-                android:textSize="22dp"/>
+                android:textSize="22dp"
+                android:textColor="#B2BABB"/>
 
             <TextView
                 android:id="@+id/ET_ComPhoneNo"
@@ -76,7 +79,8 @@
                 android:layout_below="@+id/ET_ComPhoneNo"
                 android:layout_marginTop="10dp"
                 android:text="Address"
-                android:textSize="22dp"/>
+                android:textSize="22dp"
+                android:textColor="#B2BABB"/>
 
             <TextView
                 android:id="@+id/ET_Address"

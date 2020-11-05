@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SeekerProfile" />
+        <activity android:name=".Company_profile" />
         <activity android:name=".Request" />
         <activity android:name=".ProviderHome" />
         <activity android:name=".ViewRequsteActivity" />
