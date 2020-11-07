@@ -1,54 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewRequsteActivity">
+    tools:context=".ViewRequsteActivity"
+    android:orientation="vertical">
+
+
     <include
-        android:id="@+id/include"
         layout="@layout/appbar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
 
-    <LinearLayout
+    <fragment
+        android:id="@+id/viewRequestsFragId"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/include">
+        android:layout_height="match_parent"
+        android:name="com.example.connectly.viewRequestsFragment"
+        android:layout_weight="1"
+        >
 
-        <include
-            layout="@layout/item_requst_with_card_view"/>
-        <include
-            layout="@layout/item_requst_with_card_view"/>
-        <include
-            layout="@layout/item_requst_with_card_view"/> <include
-        layout="@layout/item_requst_with_card_view"/> <include
-        layout="@layout/item_requst_with_card_view"/>
-        <include
-            layout="@layout/item_requst_with_card_view"/>
-        <include
-            layout="@layout/item_requst_with_card_view"/>
-        <include
-            layout="@layout/item_requst_with_card_view"/>
-        <include
-            layout="@layout/item_requst_with_card_view"/>
-        <include
-            layout="@layout/item_requst_with_card_view"/>
+    </fragment>
 
 
-    </LinearLayout>
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/include"-->
-<!--        tools:itemCount="10"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        tools:listitem="@layout/item_requst" />-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

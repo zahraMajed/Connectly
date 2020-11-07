@@ -10,13 +10,24 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
 
 public class ViewRequsteActivity extends AppCompatActivity {
-
+    private Toolbar toolbar;
+    public Button viewBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_request);
+        viewBtn=(Button) findViewById(R.id.viewId);
+        //Attaching AppBar code
+        toolbar = findViewById(R.id.myToolBar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("View Requests");
+
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        //Adding Fragments
+        adapter.AddFragment(new viewRequestsFragment(), "Requests");
 
     }
 
