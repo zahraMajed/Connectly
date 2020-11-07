@@ -1,178 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".PostJobActivity">
 
     <include
-        android:id="@+id/include"
-        layout="@layout/appbar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        layout="@layout/appbar"/>
 
-    <TextView
-        android:id="@+id/companyName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="28dp"
-        android:text="Company Name"
-        android:textColor="@android:color/background_dark"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include" />
-
-    <TextView
-        android:id="@+id/jobTitle"
-        android:layout_width="73dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Job Title "
-        android:textColor="@android:color/background_dark"
-        app:layout_constraintStart_toStartOf="@+id/companyName"
-        app:layout_constraintTop_toBottomOf="@+id/companyName" />
-
-
-    <TextView
-        android:id="@+id/jobDesribtion"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Job Desribtion: "
-        android:textColor="@android:color/background_dark"
-        app:layout_constraintStart_toStartOf="@+id/companyName"
-        app:layout_constraintTop_toBottomOf="@+id/jobTitle" />
-
-    <TextView
-        android:id="@+id/Requirments"
-        android:layout_width="73dp"
-        android:layout_height="20dp"
-        android:text="Requirments : "
-        android:layout_marginTop="20dp"
-        android:textColor="@android:color/background_dark"
-        app:layout_constraintStart_toStartOf="@+id/companyName"
-        app:layout_constraintTop_toBottomOf="@+id/editDesc" />
-
-    <TextView
-        android:id="@+id/theNameOfCompany"
-        android:layout_width="143dp"
-        android:layout_height="20dp"
-        android:text="Filled by default"
-        android:textColor="@android:color/background_dark"
-        app:layout_constraintBottom_toBottomOf="@+id/companyName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toEndOf="@+id/companyName"
-        app:layout_constraintTop_toTopOf="@+id/companyName"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/editName"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter here "
-        android:padding="5dp"
-        android:background="@drawable/button_shape_background_test2"
-        android:textColor="@android:color/background_dark"
-        app:layout_constraintBottom_toBottomOf="@+id/jobTitle"
-        app:layout_constraintHorizontal_bias="0.601"
-        app:layout_constraintStart_toStartOf="@+id/theNameOfCompany"
-        app:layout_constraintTop_toTopOf="@+id/jobTitle"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/editDesc"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter here "
-        android:padding="5dp"
-        android:ems="5"
-        android:lines="5"
-        android:background="@drawable/button_shape_background_test2"
-        android:textColor="@android:color/background_dark"
-        app:layout_constraintBottom_toBottomOf="@+id/jobDesribtion"
-        app:layout_constraintStart_toStartOf="@+id/theNameOfCompany"
-        app:layout_constraintTop_toTopOf="@+id/jobDesribtion"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/editDesc2"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_shape_background_test2"
-        android:ems="5"
-        android:hint="Enter here "
-        android:lines="5"
-        android:padding="5dp"
-        android:textColor="@android:color/background_dark"
-        app:layout_constraintStart_toStartOf="@+id/theNameOfCompany"
-        app:layout_constraintTop_toTopOf="@+id/Requirments"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/clearData"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        >
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".PostJobActivity">
 
 
-        android:text="Clear Data"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/postJob" />
 
-    <Button
-        android:id="@+id/cancel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cancel"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/clearData"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Company Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"
+                    android:text="Filled by default"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp" />
+            </TableRow>
+            //end of first row
 
-    <Button
-        android:id="@+id/postJob"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Post Job"
-        app:layout_constraintTop_toBottomOf="@+id/editDesc2"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="50dp" />
+            //start of second row
+            <TableRow
 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Job Title"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp" />
 
-    <TextView
-        android:id="@+id/required1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="*"
-        android:textColor="@android:color/holo_red_dark"
-        app:layout_constraintBottom_toBottomOf="@+id/jobTitle"
-        app:layout_constraintStart_toEndOf="@+id/jobTitle"
-        app:layout_constraintTop_toTopOf="@+id/jobTitle" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="6"
+                    android:text="*"
+                    android:textColor="#FF1100"
+                    android:textSize="18dp" />
 
-    <TextView
-        android:id="@+id/required2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="*"
-        android:textColor="@android:color/holo_red_dark"
-        app:layout_constraintBottom_toBottomOf="@+id/jobDesribtion"
-        app:layout_constraintStart_toEndOf="@+id/jobDesribtion"
-        app:layout_constraintTop_toTopOf="@+id/jobDesribtion" />
+                <EditText
+                    android:id="@+id/jobTitleInput"
+                    android:layout_width="300dp"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4"
+                    android:background="#FFF3F3F3"
+                    android:gravity="center"
+                    android:textSize="17dp" />
+            </TableRow>
+            //end of row 2
+            //start of row 3
+            <TableRow
 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
 
-    <TextView
-        android:id="@+id/required4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="*"
-        android:textColor="@android:color/holo_red_dark"
-        app:layout_constraintBottom_toBottomOf="@+id/Requirments"
-        app:layout_constraintStart_toEndOf="@+id/Requirments"
-        app:layout_constraintTop_toTopOf="@+id/Requirments" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Job Description"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="6"
+                    android:text="*"
+                    android:textColor="#FF0000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/jobDescriptionInput"
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4"
+                    android:background="#FFF3F3F3"
+                    android:gravity="center"
+                    android:textSize="17dp" />
+            </TableRow>
+            //end of row 3
+            //start of row 4
+            <TableRow
+
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Requirements"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="6"
+                    android:text="*"
+                    android:textColor="#FF0000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/requirementsInput"
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4"
+                    android:background="#FFF3F3F3"
+                    android:gravity="center"
+                    android:textSize="17dp" />
+            </TableRow>
+            //end of row 4
+            //start of buttons
+            //post job button
+
+            <Button
+                android:id="@+id/postJob"
+                android:layout_width="243dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="30dp"
+                android:width="500dip"
+                android:background="#E4DEED"
+                android:text="Post Job"
+                android:textSize="17dp"
+                android:onClick="postJobHandler"
+                />
+            //clear data button
+            <Button
+                android:id="@+id/clearData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:background="#E4DEED"
+                android:text="Clear Data" />
+            //cancel button
+            <Button
+                android:id="@+id/cancelPostJob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:background="#E4DEED"
+                android:text="Cancel"
+                android:onClick="cancelationHandler"
+                />
+            //end of layout
+        </TableLayout>
+    </ScrollView>
+
+    </LinearLayout>
