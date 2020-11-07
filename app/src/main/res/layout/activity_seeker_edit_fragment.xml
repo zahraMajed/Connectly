@@ -30,9 +30,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/TV_fName"
+                android:background="#F3F3F3"
                 android:inputType="textPersonName"
                 android:textSize="22dp"
-                android:focusable="false"/>
+                android:padding="8dp"/>
 
             <TextView
                 android:id="@+id/TV_lName"
@@ -49,9 +50,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/TV_lName"
+                android:background="#F3F3F3"
                 android:inputType="textPersonName"
                 android:textSize="22dp"
-                android:focusable="false"/>
+                android:padding="8dp"/>
             <TextView
                 android:id="@+id/TV_SeekerEmail"
                 android:layout_width="wrap_content"
@@ -67,9 +69,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/TV_SeekerEmail"
+                android:background="#F3F3F3"
                 android:inputType="textEmailAddress"
                 android:textSize="22dp"
-                android:focusable="false"/>
+                android:padding="8dp"/>
 
             <TextView
                 android:id="@+id/TV_SeekerPhone"
@@ -86,9 +89,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/TV_SeekerPhone"
+                android:background="#F3F3F3"
                 android:inputType="phone"
                 android:textSize="22dp"
-                android:focusable="false"/>
+                android:padding="8dp"/>
 
             <TextView
                 android:id="@+id/TV_Age"
@@ -105,9 +109,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/TV_Age"
+                android:background="#F3F3F3"
                 android:inputType="number"
                 android:textSize="22dp"
-                android:focusable="false"/>
+                android:padding="8dp"/>
 
             <TextView
                 android:id="@+id/TV_bDate"
@@ -124,9 +129,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/TV_bDate"
+                android:background="#F3F3F3"
                 android:inputType="date"
                 android:textSize="22dp"
-                android:focusable="false"/>
+                android:padding="8dp"/>
 
             <TextView
                 android:id="@+id/TV_gender"

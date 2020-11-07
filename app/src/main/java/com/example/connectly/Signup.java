@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,11 +53,13 @@ public class Signup extends AppCompatActivity implements OnItemSelectedListener 
     public void onClick(View v) {
         Intent intent;
         if (spinner.getSelectedItem().toString().equals("Seeker")) {
+            Toast.makeText(getBaseContext(), "You have register as a job seeker succusfully!", Toast.LENGTH_LONG).show();
              intent = new Intent(Signup.this,SeekerHome.class);
-        intent.putExtra("data",String.valueOf(spinner.getSelectedItem()));
-        startActivity(intent);}
+             intent.putExtra("data",String.valueOf(spinner.getSelectedItem()));
+             startActivity(intent);}
         else
         {
+            Toast.makeText(getBaseContext(), "You have register as a job provider succusfully!", Toast.LENGTH_LONG).show();
             intent = new Intent(Signup.this,ProviderHome.class);
             intent.putExtra("data",String.valueOf(spinner.getSelectedItem()));
             startActivity(intent);

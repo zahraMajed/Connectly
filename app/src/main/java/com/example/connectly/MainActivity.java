@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(moveToLogin);
                 finish();
             }
-        },4000);
+        },10000);
 
 
         // go to Post Job screen
