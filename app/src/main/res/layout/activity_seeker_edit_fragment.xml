@@ -31,8 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/TV_fName"
                 android:inputType="textPersonName"
-                android:textSize="22dp"
-                android:focusable="false"/>
+                android:textSize="22dp" />
 
             <TextView
                 android:id="@+id/TV_lName"
@@ -50,8 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/TV_lName"
                 android:inputType="textPersonName"
-                android:textSize="22dp"
-                android:focusable="false"/>
+                android:textSize="22dp" />
             <TextView
                 android:id="@+id/TV_SeekerEmail"
                 android:layout_width="wrap_content"
@@ -68,8 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/TV_SeekerEmail"
                 android:inputType="textEmailAddress"
-                android:textSize="22dp"
-                android:focusable="false"/>
+                android:textSize="22dp" />
 
             <TextView
                 android:id="@+id/TV_SeekerPhone"
@@ -87,8 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/TV_SeekerPhone"
                 android:inputType="phone"
-                android:textSize="22dp"
-                android:focusable="false"/>
+                android:textSize="22dp" />
 
             <TextView
                 android:id="@+id/TV_Age"
@@ -106,8 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/TV_Age"
                 android:inputType="number"
-                android:textSize="22dp"
-                android:focusable="false"/>
+                android:textSize="22dp" />
 
             <TextView
                 android:id="@+id/TV_bDate"
@@ -125,8 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/TV_bDate"
                 android:inputType="date"
-                android:textSize="22dp"
-                android:focusable="false"/>
+                android:textSize="22dp" />
 
             <TextView
                 android:id="@+id/TV_gender"
