@@ -4,10 +4,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
@@ -43,6 +45,23 @@ public class ViewRequsteActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id=item.getItemId();
 
-
+        if (id == R.id.menu2_home){
+            Intent intent= new Intent(ViewRequsteActivity.this,ProviderHome.class);
+            startActivity(intent);
+            return true;
+        } else if (id == R.id.Menu2_profile){
+            Intent intent= new Intent(ViewRequsteActivity.this,Company_profile.class);
+            startActivity(intent);
+            return true;
+        } else if (id == R.id.menu2_logout){
+            Intent intent= new Intent(ViewRequsteActivity.this,Login.class);
+            startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
